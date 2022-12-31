@@ -30,7 +30,7 @@ export default function SignButton(props) {
     // Clear everything
     if (butt.key === 'Backspace') {
       setDisplayText('0');
-      setHistory('');
+      setHistory('Result = 0');
     }
   };
 

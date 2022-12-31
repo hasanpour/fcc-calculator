@@ -8,13 +8,13 @@ import signKeys from './components/Keys/signKeys';
 import './App.css';
 
 function App() {
-  const [history, setHistory] = useState('');
+  const [history, setHistory] = useState('Result = 0');
   const [displayText, setDisplayText] = useState('0');
 
   return (
     <div className="container">
       <div className="display">
-        <div>
+        <div className="display__history">
           {history}
         </div>
         <div id="display">
@@ -33,6 +33,7 @@ function App() {
             />
           ))}
         </div>
+        <div className="buttons__separator" />
         <div className="buttons__signs">
           {signKeys.map((signKey) => (
             <SignButton
